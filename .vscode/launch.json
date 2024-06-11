@@ -1,0 +1,71 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "DoublyLinkedList",
+            "request": "launch",
+            "mainClass": "DoublyLinkedList",
+            "projectName": "DataStructure_1d628da9"
+        },
+        {
+            "type": "java",
+            "name": "Queue1",
+            "request": "launch",
+            "mainClass": "Queue1",
+            "projectName": "DataStructure_57307eac"
+        },
+        {
+            "type": "java",
+            "name": "ColorExample",
+            "request": "launch",
+            "mainClass": "Practice.ColorExample",
+            "projectName": "DataStructure_57307eac"
+        },
+        {
+            "mainClass": "com.example.donutClick/Main",
+            "name": "donutClick/Main",
+            "projectName": "DataStructure_57307eac",
+            "request": "launch",
+            "type": "java"
+        },
+        {
+            "mainClass": "com.example.donutClick/ListNode",
+            "name": "donutClick/ListNode",
+            "projectName": "DataStructure_57307eac",
+            "request": "launch",
+            "type": "java"
+        },
+        {
+            "mainClass": "com.example.donutClick/HelloWorld",
+            "name": "donutClick/HelloWorld",
+            "projectName": "DataStructure_57307eac",
+            "request": "launch",
+            "type": "java"
+        },
+        {
+            "mainClass": "donutClick",
+            "name": "donutClick",
+            "projectName": "DataStructure_57307eac",
+            "request": "launch",
+            "type": "java"
+        },
+        {
+            "mainClass": "ListNode",
+            "name": "ListNode",
+            "projectName": "DataStructure_57307eac",
+            "request": "launch",
+            "type": "java"
+        },
+        {
+            "mainClass": "LinkedLists",
+            "name": "LinkedLists",
+            "projectName": "DataStructure_57307eac",
+            "request": "launch",
+            "type": "java"
+        }
+    ],
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0"
+}
