@@ -30,6 +30,7 @@ public class Queue {
             }
 
         }
+        sc.close();
 
     }
     static void enQueue(int y){
@@ -67,5 +68,6 @@ public class Queue {
             System.out.println(a[i]);
         }
     }
+
 }
 

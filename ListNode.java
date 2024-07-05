@@ -2,7 +2,6 @@
 //  Definition for singly-linked list.
 
 import java.io.PrintStream;
-import java.awt.Color;
 public class ListNode {
       int val;
       public static PrintStream out = new  PrintStream(System.out);

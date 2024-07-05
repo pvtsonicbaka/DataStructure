@@ -80,7 +80,25 @@ public class DoublyLinkedList {
                         int deleteAfterValue= sc.nextInt();
                         list.deleteAfterValue(deleteAfterValue);
                         break;
-                default:
+                    case 11:
+                        System.out.println("del Odd ");
+                        list.delOdd();
+                        break;
+                    case 12:
+                        list.midPoint();
+                    case 13 :
+                        System.out.println("enter data in orderly lined list");
+                        int data9 = sc.nextInt();
+                        list.addOrderly(data9);
+                        break;
+                    case 14:
+                        list.findMax();
+
+                    case 15:
+                        list.reverse(list.head);
+                        break;
+                    default:
+
                     break;
             }
             
@@ -302,6 +320,87 @@ public class DoublyLinkedList {
         else{
             System.out.println("\u001b[96mlmaoo\u001b[100m");
         }
+    }
+    void delOdd(){
+        if(head==null){
+            System.out.println("empty");
+            return;
+        }  
+        Node temp = head;
+        int i =0;
+        while (temp!=null) {
+            Node next = temp.next;
+            if(i%2==0){
+                System.out.println("jii");
+                deleteParticular(temp.data);
+            }
+            i++;
+            temp=next;
+        }
+          
+        
+    }
+    void midPoint(){
+        if(head ==null){
+            System.out.println("nig");
+            return;
+        }
+        Node temp1 =head;
+        Node temp2 =head;
+        while ( temp2.next.next!=null&&temp2.next!=null&&temp2!=null &&temp2.next!=null ) {
+            temp1 = temp1.next;
+            temp2 = temp2.next.next;
+        }
+        System.out.println("->>"+temp1.data+"<--");
+
+        
+    }
+    void addOrderly(int data){
+        Node n =new Node(data);
+        if(head==null){
+            head=n;
+            return;
+
+        }
+        if(head.data >data){
+            addFirst(data);
+            return;
+        }
+        Node temp =head;
+        while (temp.next!=null && temp.next.data<data) {
+                temp=temp.next;
+
+        }   
+        n.next=temp.next;
+        if(temp.next!=null){
+            temp.next.prev = n ;
+        }
+        temp.next= n;
+        n.prev =temp;
+        
+    }
+    void findMax(){
+        if(head ==null){
+            System.out.println("snjjsn");return;
+        }
+        Node temp = head;
+        int max = head.data;
+        while (temp!=null) {
+            if(max< temp.data){
+                max= temp.data;
+            }
+            temp=temp.next;   
+        }
+        System.out.println("maxxxx "+max);
+
+    }
+    void reverse(Node tNode){
+        if(tNode==null){
+            return;
+        }
+        reverse(tNode.next);
+        System.out.print(tNode.data+" ");
+
     }
     
 }

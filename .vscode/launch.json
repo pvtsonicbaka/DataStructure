@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "temoCodeRunnerFile",
+            "request": "launch",
+            "mainClass": "temoCodeRunnerFile",
+            "projectName": "DataStructure_1d628da9"
+        },
+        {
+            "type": "java",
             "name": "DoublyLinkedList",
             "request": "launch",
             "mainClass": "DoublyLinkedList",
